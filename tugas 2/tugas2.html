@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Mahasiswa - Izza</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #4A90E2 0%, #F5A623 100%);
+      min-height: 100vh;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 30px 20px 10px 20px;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      font-weight: 700;
+    }
+    header p {
+      margin-top: 5px;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 25px;
+    }
+    nav a {
+      background-color: rgba(255, 255, 255, 0.4);
+      color: white;
+      text-decoration: none;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    nav a:hover {
+      background-color: white;
+      color: #4A90E2;
+    }
+    .container {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 0 20px 40px 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .kolom-kiri {
+      flex: 1.2;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .kolom-kanan {
+      flex: 0.8;
+      min-width: 280px;
+    }
+    .card {
+      background-color: #88c5f7;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    .card h2 {
+      color: #ff3b94;
+      margin-top: 0;
+      font-size: 1.4rem;
+      border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+      padding-bottom: 8px;
+    }
+    .info-item {
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .info-item strong {
+      color: #1a365d;
+    }
+    .profile-box {
+      text-align: center;
+    }
+    .img-container {
+      width: 160px;
+      height: 160px;
+      margin: 15px auto;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid white;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    }
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .profile-name {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #1a365d;
+      margin-top: 10px;
+    }
+    .profile-role {
+      color: #555;
+      font-size: 0.9rem;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Biodata Mahasiswa</h1>
+    <p>Tugas 2 - Pemrograman Web</p>
+  </header>
+
+  <nav>
+    <a href="#biodata">Biodata</a>
+    <a href="#deskripsi">Deskripsi</a>
+    <a href="https://github.com/izzazahra465-bot" target="_blank">Profil GitHub</a>
+  </nav>
+
+  <div class="container">
+    <div class="kolom-kiri">
+      <div class="card" id="biodata">
+        <h2>Informasi Pribadi</h2>
+        <div class="info-item"><strong>Nama:</strong> Izza Zahra Syabana Wahid</div>
+        <div class="info-item"><strong>NPM:</strong> 253020064</div>
+        <div class="info-item"><strong>Alamat:</strong> Kediri, Jawa Timur</div>
+        <div class="info-item"><strong>TTL:</strong> Kediri, 02 September 2006</div>
+      </div>
+
+      <div class="card" id="deskripsi">
+        <h2>Deskripsi Singkat Pribadi</h2>
+        <p style="line-height: 1.6; margin: 0;">
+          Halo! Saya adalah seorang mahasiswa yang sedang menempuh pendidikan di Program Studi Sistem Informasi. Saya memiliki minat dalam bidang pemrosesan data, pemrograman web, dan pengembangan logika sistem.
+        </p>
+      </div>
+    </div>
+
+    <div class="kolom-kanan">
+      <div class="card profile-box">
+        <h2 style="text-align: left;">Foto Profil</h2>
+        <div class="img-container">
+          <img src="foto.jpg" alt="Foto Izza">
+        </div>
+        <div class="profile-name">Izza Zahra Syabana Wahid</div>
+        <div class="profile-role">Mahasiswa</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
